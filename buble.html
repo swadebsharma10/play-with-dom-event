@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bobble</title>
+    <style>
+        div{
+            min-width: 200px;
+            min-height: 200px;
+            border-radius: 10px;
+            margin: 20px;
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div id="grandparent">
+        <div id="parent">
+            <div id="child">
+
+            </div>
+        </div>
+    </div>
+    <script>
+     document
+     .getElementById('grandparent')
+     .addEventListener('click',function(){
+      console.log('grand Parent Clicked')
+     });   
+     document
+     .getElementById('parent')
+     .addEventListener('click',function(){
+      console.log(' Parent Clicked')
+     });   
+     document
+     .getElementById('child')
+     .addEventListener('click',function(){
+      console.log('child Clicked')
+     });   
+    </script>
+</body>
+</html>
